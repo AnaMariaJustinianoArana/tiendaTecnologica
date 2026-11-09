@@ -1,0 +1,83 @@
+/* Incluye bordes y relleno dentro del tamaño del elemento */
+* {
+    box-sizing: border-box;/*aplica el modelo de caja a todos los elementos para incluir bordes y relleno dentro del tamaño del elemento*/
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(236, 239, 192);
+    color: #19417c;
+    margin: 0;
+}
+
+/* Encabezado */
+header {
+    background-color: #526c8d;
+    color: rgb(192, 182, 103);
+    text-align: center;
+    padding: 10px 10px;
+}
+
+main {
+    max-width: 1100px;/*ancho máximo del contenido principal para que no se extienda demasiado en pantallas grandes*/
+    margin: auto;/*centra el contenido principal en la página*/
+    padding: 25px;/*espaciado interno del contenido principal*/
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Organiza las tarjetas y permite que bajen a otra fila */
+.productos {
+    display: flex;/*utiliza flexbox para organizar las tarjetas de productos*/
+    flex-wrap: wrap;/*permite que las tarjetas se ajusten a la siguiente fila si no caben en la actual*/
+    justify-content: center;
+    gap: 20px;/*espacio entre las tarjetas de productos*/
+}
+/* Tarjeta de cada producto */
+.producto {
+    background-color: white;/*color de fondo blanco para las tarjetas*/
+    width: 240px;/*ancho fijo para las tarjetas*/
+    max-width: 100%;/*asegura que no se desborde en pantallas pequeñas*/
+    padding: 20px;/*espaciado interno de la tarjeta*/
+    border: 1px solid #dce3ec;/*color de borde gris claro para las tarjetas*/
+    border-radius: 12px;/*bordes redondeados para las tarjetas*/
+    text-align: center;/*centra el contenido dentro de la tarjeta*/
+    box-shadow: 0 4px 10px rgba(60, 56, 56, 0.1);/*agrega una sombra sutil para dar profundidad a la tarjeta*/
+}
+/* Imágenes con el mismo espacio, sin deformarse */
+.producto img {
+    width: 100%;/*la imagen ocupa todo el ancho de la tarjeta*/
+    height: 160px;/*altura fija para las imágenes de los productos*/
+    object-fit: contain;/*mantiene la proporción de la imagen y la centra*/
+                        /* Evita que la imagen se deforme y se recorte */
+}
+.precio {
+    color: #ef1414;/*color verde para el precio*/
+    font-size: 22px;/* tamaño de fuente más grande para el precio */
+    font-weight: bold;/* hace que el precio sea más destacado */
+}
+button {
+    background-color: #1768ac;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #104879;
+}
+
+footer {
+    background-color: #15365d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+a{
+    color: #eef2f7;
+}

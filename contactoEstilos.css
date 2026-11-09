@@ -1,0 +1,53 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    margin: 0;
+    padding: 5px;
+}
+.contacto{
+    background-color: #fff;
+    width: 600px;
+    max-width: 100%;
+    margin: 20px auto; /*reducir el margen superior e inferior a 20px y centrar horizontalmente*/
+    padding: 30px;
+    border:1px solid #ccc;
+    border-radius: 10px;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.botones{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+button{
+    cursor: pointer;
+    color: #fff;
+    background-color: #19417c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: #d8ecb3;
+    color: #19417c;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #2374ab;
+    outline-offset: 2px;
+}
+.exito { color: #1e7b34; background: #e3f6e8; padding: 10px; border-radius: 5px; }
+.error { color: #b00020; background: #fde8ea; padding: 10px; border-radius: 5px; }
